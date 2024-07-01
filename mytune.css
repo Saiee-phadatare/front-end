@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #252529;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.nav-bar{
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: rgb(51, 34, 34);
+    position: fixed;
+    padding: .7rem;
+}
+
+.nav-bar li{
+    display: inline;
+    float: left;
+    margin-left: 1rem;
+}
+
+.nav-bar li a:hover{
+    background: gray;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+    padding: .6rem;
+}
+
+.nav-toggel{
+    display: none;
+}
+
+.nav-toggel button{
+    background-color: #00756f;
+    border: #00756f;
+}
+/*---------------------------------Nav-end----------------------------*/
+
+.home{
+    margin: 0;
+    background: url("images/boy2.jpeg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    align-content: center;
+    min-height: 100vh;
+
+}
+
+.home h1{
+    font-size: 3.5rem;
+}
+
+.home h4{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.home p{
+    margin: 2rem 3.5rem 0;
+    font-size: larger;
+}
+
+/*-------------------------------------Music section----------------------------------*/
+
+.music{
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
+.music h1{
+    font-size: 2.5rem;
+    padding: .4rem;
+}
+
+.music h3{
+    font-size: 1.7rem;
+    padding-top: 1.3rem;
+}
+
+.music .info,
+.video p{
+    margin: 2rem 3.5rem 0;
+    font-size: 1.2rem;
+}
+
+.music button{
+    margin-top: 1.2rem;
+    background: #b90415;
+    padding: 1rem;
+    border: none;
+    color: white;
+}
+
+.music p{
+    margin-top: 1.5rem;
+}
+
+.music img{
+    margin-top: .8rem;
+    width: 1150px;
+    height: 620px;
+}
+
+/*------------------------------------Video section-------------------------------*/
+
+.video{
+    background: rgb(228, 226, 226);
+    color: rgb(43, 42, 42);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.video h1{
+    font-size: 2.3rem;
+}
+
+.video button{
+    background: #103063;
+    height: 50px;
+    width: 100px;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.video img{
+    padding-left: 2rem;
+}
+
+/*--------------------------------------INFORMATION-------------------------------*/
+
+.world{
+    background: url('images/sky.jpeg');
+    background-size: cover;
+    height: 550px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.world p{
+    margin: 2rem 3.5rem 0;
+    font-size: 1.3rem;
+}
+
+/*--------------------------------------GIFT CARDS----------------------------------------*/
+
+.gift-cards{
+    background: rgb(235, 235, 235);
+    display: flex;
+    padding:3rem;
+    color: rgb(61, 61, 61);
+}
+
+.gift-cards .image img{
+    padding: 2rem;
+    height: 400px;
+    width: 600px;
+}
+
+.gift-info .gifts{
+    padding-top: 1rem;
+    width: 600px;
+}
+
+.gift-info p{
+    padding-top: 1rem;
+    font-size: 16px;
+}
+
+
+.gift-info a{
+    padding-top: 1rem;
+    text-decoration: none;
+}
+
+/*-----------------------------FOOTER--------------------------------------*/
+
+.footer{
+    height: 300px;
+    background: #333;
+    color: white;
+}
+
+.link{
+    display: flex;
+    margin-left: 2rem;
+    height: 200px;
+    padding-top: 3rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(185, 183, 183);
+    font-size: 15px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-left: 2rem;
+}
+
+.bottom{
+    background: #3d3d3d;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    color: white;
+}
+
+hr{
+   margin: 1rem;
+   margin-left: 0;
+   color: rgb(185, 183, 183);
+}
+
+
+/*---------------------RESPONSIVE-------------------------------*/
+
+@media screen and (max-width:800px){
+    .footer{
+        display: none;
+    }
+
+    .gift-cards{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .gift-cards .image img{
+        padding: 2rem 5rem 1rem;
+    }
+    
+    .gift-info .gifts{
+        padding-top: 1rem;
+        width: 600px;
+    }   
+}
+
+@media screen and (max-width:580px){
+    .home{
+        background: url("images/boy3.jpeg");
+        background-size: cover;
+        min-height: 50vh;
+        min-width: 500px;
+    
+    }
+
+    .home h1{
+        font-size: 3rem;
+    }
+    
+    .home h4{
+        font-size: 1.5rem;
+        padding: 2rem 2rem 0;
+    }
+
+    .nav-bar .a{
+        display: none;
+    }
+
+    .nav-toggel{
+        display: inline;
+        float: right;
+        margin-right: 20px;
+        align-content: center;
+        color: white;
+        transition: all .1s ease;
+        cursor: pointer;
+    }
+
+    .home p{
+        display: none;
+    }
+
+    .world{
+        background-size: cover;
+        height: 700px;
+    }
+
+    .gift-cards{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .gift-cards .image img{
+        padding: 0;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .gift-info .gifts{
+        padding-top: 1rem;
+        width: 360px;
+    }
+    
+
+    .footer{
+        display: none;
+    }
+}

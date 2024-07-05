@@ -163,12 +163,13 @@ body{
 .gift-cards{
     background: rgb(235, 235, 235);
     display: flex;
-    padding:3rem;
+    padding: 2rem;
     color: rgb(61, 61, 61);
 }
 
 .gift-cards .image img{
     padding: 2rem;
+    padding-left: 0;
     height: 400px;
     width: 600px;
 }

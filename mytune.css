@@ -254,13 +254,12 @@ hr{
     }   
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width:740px){
     .home{
         background: url("images/boy3.jpeg");
         background-size: cover;
         min-height: 50vh;
-        min-width: 500px;
-    
+        min-width: 100%;
     }
 
     .home h1{
